@@ -1,3 +1,4 @@
+% By Sumaiya 
 % Practice1_Question5
 % Read the images
 im1 = imread('flower.jpg');
