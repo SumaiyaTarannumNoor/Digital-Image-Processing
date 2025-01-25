@@ -1,3 +1,5 @@
+% By Sumaiya 
+% Practice 1 Question 4
 % Read the image
 im = imread('download.jpg'); 
 
