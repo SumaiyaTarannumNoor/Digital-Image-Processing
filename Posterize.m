@@ -1,24 +1,24 @@
 % Read the image
-img = imread('flower.jpg');
+im = imread('flower.jpg');
 
-% Convert the image to double precision
-img_double = im2double(img);
+% Convert the image to double
+im_double = im2double(im);
 
-% Define the number of levels for posterization
-levels = 4;
+% Define the number of Colours for posterization
+colours = 4;
 
 % Quantize the image
-posterized_img = round(img_double * (levels - 1)) / (levels - 1);
+posterized_im = round(im_double * (colours - 1)) / (colours - 1);
 
 % Convert back to uint8 for display
-posterized_img_uint8 = im2uint8(posterized_img);
+posterized_im_uint8 = im2uint8(posterized_im);
 
 % Display the original and posterized images
 figure;
 subplot(1, 2, 1);
-imshow(img);
+imshow(im);
 title('Original Image');
 
 subplot(1, 2, 2);
-imshow(posterized_img_uint8);
-title(['Posterized Image (', num2str(levels), ' levels)']);
+imshow(posterized_im_uint8);
+title(['Posterized Image']);
