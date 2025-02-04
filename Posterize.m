@@ -1,5 +1,5 @@
 % Read the image
-im = imread('flower.jpg');
+im = imread('MY_IMAGE.jpg');
 
 % Convert the image to double
 im_double = im2double(im);
