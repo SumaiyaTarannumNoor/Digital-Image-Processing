@@ -1,5 +1,5 @@
 % Read the image
-im = imread('flower.jpg');
+im = imread('MY_IMAGE.jpg');
 
 % Get the dimensions of the image
 [rows, cols, ~] = size(im);
