@@ -1,5 +1,5 @@
 % Read the image
-im = imread('flower.jpg');
+im = imread('MY_IMAGE.jpg');
 
 % Reverse the order of the pixels in each row to create a mirror image
 mirror_im = im(:, end:-1:1, :);
