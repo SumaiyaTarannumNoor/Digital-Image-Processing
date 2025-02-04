@@ -1,5 +1,5 @@
 % Read the image
-im = imread('flower.jpg');
+im = imread('MY_IMAGE.jpg');
 
 % Split the image into R, G, B channels
 R = im(:,:,1);
