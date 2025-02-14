@@ -1,5 +1,3 @@
-% Done by Sumaiya
-
 A = [1, 2, 4, 4];  
 M = 4;             
 
