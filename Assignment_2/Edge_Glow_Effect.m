@@ -1,41 +1,32 @@
-% Step 1: Read the Edge_Glow_in.jpg image (RGB image always has 3 channels)
- rgbImage = imread('Edge_Glow_in.jpg');
+clc; clear; close all;
 
-% Step 2: Perform first order derivative to get horizontal and vertical edges
-% Convert the image to grayscale for edge detection
-grayImage = rgb2gray(rgbImage);
+img = imread('Edge_Glow_in.jpg'); 
+gray_img = rgb2gray(img); 
 
-% Calculate the gradient in the x (horizontal) and y (vertical) directions
-[Gx, Gy] = imgradientxy(grayImage, 'sobel');
+figure, imshow(img), title('Original RGB Image');
+figure, imshow(gray_img), title('Grayscale Image');
 
-% Calculate the average of the gradients
-avgGradient = (Gx + Gy) / 2;
+% First-order derivatives using Sobel operators
+gx = imfilter(double(gray_img), [-1 0 1; -2 0 2; -1 0 1], 'same');
+gy = imfilter(double(gray_img), [-1 -2 -1; 0 0 0; 1 2 1], 'same');
 
-% Display the average gradient image
-figure(1);
-imshow(avgGradient, []);
-title('Average Gradient Image');
+% Display Gx and Gy
+figure, imshow(uint8(abs(gx))), title('Gx (First-order Derivative)');
+figure, imshow(uint8(abs(gy))), title('Gy (First-order Derivative)');
 
-% Step 3: Invert the average gradient image
-invertedAvgGradient = 255 - avgGradient;
+gradient_avg = (abs(gx) + abs(gy)) / 2;
 
-% Display the inverted average gradient image
-figure(2);
-imshow(invertedAvgGradient, []);
-title('Inverted Average Gradient Image');
+% Display gradient average image
+figure, imshow(uint8(gradient_avg)), title('Average of Gx and Gy');
 
-% Step 4: Blur the inverted average gradient image
-blurredImage = imgaussfilt(invertedAvgGradient, 2);
+% Apply Gaussian blur
+blurred_img = imgaussfilt(gradient_avg, 2); 
 
-% Show figure 3 with the blurred image
-figure(3);
-imshow(blurredImage);
-title('Blurred Image');
+% Display the blurred image
+figure, imshow(uint8(blurred_img)), title('Blurred Image');
 
-% Step 5: Merge the input image and blurred output image to create the final image
-mergedImage = imfuse(rgbImage, blurredImage, 'blend');
+% Blend the input image and the blurred image
+final_output = uint8(0.55 * double(img) + 0.36 * blurred_img);
 
-% Show figure 4 with the final merged image
-figure(4);
-imshow(mergedImage);
-title('Merged Image (Input and Blurred)');
+% Display the final output
+figure, imshow(final_output), title('Final Blended Output');
