@@ -8,14 +8,14 @@ img = imread('footBall_orig.jpg');
 
 figure, imshow(img), title('Original RGB Image');
 
-% High-Pass Filtering (Edge Detection using Laplacian Filter)
-hp_filter = [0 -1 0; -1 4 -1; 0 -1 0]; % Laplacian kernel
+% High-Pass Filtering
+hp_filter = [0 -1 0; -1 4 -1; 0 -1 0]; 
 edges = imfilter(double(img), hp_filter, 'replicate');
 
 figure, imshow(uint8(edges)), title('High-Pass Filter (Edges)');
 
-% Low-Pass Filtering (Blur using Gaussian Filter)
-lp_filter = fspecial('gaussian', [5 5], 1); % 5x5 Gaussian filter with σ=1
+% Low-Pass Filtering
+lp_filter = fspecial('gaussian', [5 5], 1); 
 blurred = imfilter(double(img), lp_filter, 'replicate');
 
 figure, imshow(uint8(blurred)), title('Low-Pass Filter (Blur)');
