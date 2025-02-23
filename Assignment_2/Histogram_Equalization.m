@@ -27,11 +27,10 @@ pr = histogram / (M * N);
 
 figure, imhist(img), title('Original Histogram');
 
-% Compute Cumulative Distribution Function (CDF) for Histogram Equalization
+% Compute Cumulative Distribution Function (CDF)
 cdf = cumsum(pr);
-sk = round((L - 1) * cdf); % Using equation from the slide
+sk = round((L - 1) * cdf); 
 
-% Apply Histogram Equalization Transformation
 equalized_img = sk(double(img) + 1);
 
 figure, imshow(uint8(equalized_img)), title('Histogram Equalized Image');
