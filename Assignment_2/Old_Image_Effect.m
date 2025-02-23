@@ -1,6 +1,5 @@
 % Step 1: Read the image and apply sepia filter
-im = imread('MY_IMAGE.jpg');
-
+im = imread('flower.jpg');
 
 [rows, cols] = size(im(:,:,1));
 
@@ -26,41 +25,28 @@ end
 
 sepia_im = uint8(min(sepia_im, 255));
 
-% Step 2: Show the original and sepia images together
+% Step 2: Show the original and sepia images separately
 figure(1);
-subplot(1, 2, 1);
 imshow(im);
 title('Original Image');
 
-subplot(1, 2, 2);
+figure(2);
 imshow(sepia_im);
 title('Sepia Effect');
 
 % Step 3: Create Gaussian noise and show it
-% Generate Gaussian noise
 noise = imnoise(zeros(size(sepia_im)), 'gaussian', 0, 0.01);
 
-% Display the noise
-figure(2);
+figure(3);
 imshow(noise, []);
 title('Gaussian Noise');
 
-% Step 4: Blend the noise with the sepia image and show the result
-% Blend the sepia image with Gaussian noise
+% Step 4: Blend the sepia image with Gaussian noise
 old_im = im2double(sepia_im) + noise;
 
 old_im = min(max(old_im, 0), 1);
 
-% Display the original sepia, noise, and old images
-figure(3);
-subplot(1, 3, 1);
-imshow(sepia_im);
-title('Sepia Effect');
-
-subplot(1, 3, 2);
-imshow(noise, []);
-title('Gaussian Noise');
-
-subplot(1, 3, 3);
+% Display the blended image (old image effect) separately
+figure(4);
 imshow(old_im);
 title('Old Image Effect');
