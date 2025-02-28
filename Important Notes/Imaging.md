@@ -60,3 +60,7 @@ Gamma-ray imaging is used in nuclear security and safety to detect, localize, an
 Geologic survey <br>
 Gamma-ray imaging can be used to map and estimate the activity of radiological source distributions. 
 Other applications Contamination assessment, Decontamination and remediation verification, Nuclear facility decommissioning, Radiation safety/protection, and Nuclear security. 
+#### Gamma Camera <br>
+The Nuclear Camera (or otherwise known as a gamma camera) uses special imaging techniques called planar dynamic or single-photon emission-computed tomography (SPECT) to detect radioactive energy that is emitted from the patient’s body and convert it into an image. The gamma camera itself does not emit any radiation. It is composed of radiation detectors, called gamma camera heads, which are encased in metal and plastic and most often shaped like a box, attached to a round circular donut shaped gantry.
+
+The radioactive energy emitting from the patient’s body is the result of the introduction of a radioactive material called a radiopharmaceutical or radiotracer into the body. This material is either injected into the bloodstream, swallowed or inhaled as a gas. The material accumulates in the area of your body under examination, where it gives off a small amount of energy in the form of gamma rays. The gamma camera detects this energy and, with the help of a computer, create pictures that offer details on the structure and function of organs and tissues.
