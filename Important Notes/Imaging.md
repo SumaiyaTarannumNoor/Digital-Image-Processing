@@ -45,4 +45,18 @@ Fluoroscopy is a study of moving body structures--similar to an X-ray "movie." A
 #### PET <br>
 Positron emission tomography (PET) scans produce detailed 3-dimensional images of the inside of the body. The images can clearly show the part of the body being investigated, including any abnormal areas, and can highlight how well certain functions of the body are working.
  
-
+### Gamma Ray Imaging <br>
+Gamma-ray imaging is a technique that uses gamma rays to create images and detect radioactive materials. It's used in many fields, including medicine, nuclear engineering, and astrophysics. 
+How it works 
+A gamma camera detects gamma rays from radioactive atoms in the body.
+The gamma rays pass through a collimator, which is a set of metal tubes.
+The gamma rays hit a scintillation crystal, which converts them into light.
+The camera amplifies and processes the light to create an image.
+Uses
+Medicine
+Doctors use gamma cameras to diagnose diseases, monitor heart function, and image other physiological processes. 
+Nuclear engineering
+Gamma-ray imaging is used in nuclear security and safety to detect, localize, and characterize nuclear materials. 
+Geologic survey
+Gamma-ray imaging can be used to map and estimate the activity of radiological source distributions. 
+Other applications Contamination assessment, Decontamination and remediation verification, Nuclear facility decommissioning, Radiation safety/protection, and Nuclear security. 
