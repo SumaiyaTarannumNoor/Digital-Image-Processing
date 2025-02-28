@@ -44,5 +44,5 @@ Fluoroscopy is a study of moving body structures--similar to an X-ray "movie." A
 
 #### PET <br>
 Positron emission tomography (PET) scans produce detailed 3-dimensional images of the inside of the body. The images can clearly show the part of the body being investigated, including any abnormal areas, and can highlight how well certain functions of the body are working.
-
+ 
 
