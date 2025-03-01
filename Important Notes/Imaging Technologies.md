@@ -78,3 +78,19 @@ Fluorescence microscopy is a type of light microscopy that uses fluorescence to 
 
 ### Spectral Range Considerations  
 - Different types of infrared cameras capture different parts of the infrared spectrum, impacting the information obtained.
+
+# Signal Reception and Data Processing  
+
+## Signal Reception  
+- The scattered microwave waves are received by multiple antennas positioned around the object.  
+
+## Data Processing  
+- The received signals are analyzed using complex algorithms to reconstruct a 2D or 3D image based on the variations in the scattered field.  
+
+## Limitations  
+
+### Resolution  
+- Compared to other imaging modalities like X-ray, microwave imaging generally has lower spatial resolution due to the longer wavelengths involved.  
+
+### Depth Penetration  
+- While good for imaging deep within certain materials, penetration depth can be limited depending on the material properties and frequency used.
