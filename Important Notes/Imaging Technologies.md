@@ -185,3 +185,60 @@ Seismic imaging is a geophysical technique that uses sound waves to create image
 - **Understanding mountain permafrost**  
 - **Performing hazard-mitigation measures**
   
+# Fractal Imaging  
+
+Fractal imaging is a method of compressing and storing images using **fractal geometry**. It has applications in **image compression, medical imaging, and art**.  
+
+## Applications  
+
+### Image Compression  
+- Fractal imaging is a major **digital compression technique** that enables storing and transmitting **high-quality images** efficiently.  
+
+### Medical Imaging  
+- Fractal analysis can enhance the **clarity and diagnostic quality** of medical images such as **CT scans and MRIs**.  
+- It can be used to **model ductal patterns and parenchymal structures** in mammograms.  
+
+### Art  
+- Fractal images can be used to create **digital art**, which can be **printed** or distributed as **NFTs**.  
+
+## How It Works  
+- Fractal imaging uses **fractal geometry** to represent areas of images with **similar patterns or textures**.  
+- **Fractal-based algorithms** can remove noise while preserving important details and structures.  
+- It can be used to **model ductal patterns and parenchymal structures** in mammograms.  
+
+## Other Uses  
+- Enhancing the **clarity and diagnostic quality** of medical images.  
+- Modeling **ductal patterns and parenchymal structures** in mammograms.  
+
+## Related Terms  
+- **Fractal Art**  
+- **Fractal Image Format**  
+- **Fractal Dimension**  
+
+# 3D Imaging  
+
+3D imaging is a technology that creates **three-dimensional models** of objects and environments. It is used in various fields, including **medicine, engineering, and entertainment**.  
+
+## How It Works  
+1. **Capturing Images:** 3D imaging uses **cameras and software** to capture multiple **two-dimensional images** of an object from different angles.  
+2. **Distance Calculation:** The software analyzes the images to calculate the **distance between points** on the object.  
+3. **Model Creation:** The software then uses **algorithms** to generate a **three-dimensional model**.  
+
+## Applications  
+
+### Medicine  
+- Used in **CT scans, MRIs, and ultrasounds** to create detailed images of the **human body**.  
+
+### Architecture  
+- Helps create **renderings of proposed buildings** for design and planning.  
+
+### Product Design  
+- Used to develop **prototypes of products** before manufacturing.  
+
+### Cultural Heritage Conservation  
+- Helps document, analyze, and **preserve historic artifacts, structures, and works of art**.  
+
+### Virtual Reality and Video Games  
+- Creates **immersive experiences** for **VR applications and gaming**.  
+
+3D imaging provides a **more comprehensive view** than traditional **2D imaging**, which only captures **height and width**.  
