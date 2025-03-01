@@ -79,18 +79,31 @@ Fluorescence microscopy is a type of light microscopy that uses fluorescence to 
 ### Spectral Range Considerations  
 - Different types of infrared cameras capture different parts of the infrared spectrum, impacting the information obtained.
 
-# Signal Reception and Data Processing  
+# Imaging in the Microwave Band  
 
-## Signal Reception  
-- The scattered microwave waves are received by multiple antennas positioned around the object.  
+"Imaging in the microwave band" refers to a technique that uses electromagnetic waves within the microwave frequency range (typically 300 MHz to 300 GHz) to create images of objects. It works by detecting how these waves interact with and are scattered by the object's internal structure, allowing for the visualization of hidden or embedded objects within a material or structure. Essentially, it's a form of non-invasive imaging based on the object's dielectric properties, often used in applications like medical imaging, nondestructive testing, and security scanning.  
 
-## Data Processing  
-- The received signals are analyzed using complex algorithms to reconstruct a 2D or 3D image based on the variations in the scattered field.  
+## Key Points About Microwave Imaging  
 
-## Limitations  
+### Frequency Range  
+- Microwave band, encompassing frequencies from **300 MHz to 300 GHz**.  
 
-### Resolution  
-- Compared to other imaging modalities like X-ray, microwave imaging generally has lower spatial resolution due to the longer wavelengths involved.  
+### Principle  
+- Microwave waves penetrate materials to a certain depth.  
+- Variations in the material's electrical properties (**dielectric constant**) cause reflections and scattering patterns.  
+- These patterns can be analyzed to create an image.  
 
-### Depth Penetration  
-- While good for imaging deep within certain materials, penetration depth can be limited depending on the material properties and frequency used.
+## Applications  
+
+### Medical Imaging  
+- Detecting tumors within the body, particularly in **breast cancer screening**.  
+
+### Non-Destructive Testing (NDT)  
+- Inspecting internal flaws in materials like **composite structures** or **concrete**.  
+
+### Security Scanning  
+- Detecting **concealed objects** within luggage or packages.  
+
+### Through-Wall Imaging  
+- Locating **people or objects behind walls**.
+  
