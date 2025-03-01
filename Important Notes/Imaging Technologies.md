@@ -26,3 +26,12 @@ The type of imaging used depends on the specific clinical needs.
 - https://www.google.com/amp/s/www.neurologica.com/blog/pet-scan-vs-ct-scan%3fhs_amp=true
 
 #### A CT scan uses X-rays to create images of organs, bones, and tissues, while a PET scan uses a radioactive tracer to show how organs function. Both are common and important imaging tools used to diagnose and monitor health conditions.
+
+#### X-ray
+An X-ray imaging system is tem is a medical device that uses X-rays to produce images of internal body structures by passing radiation through the body.<br>
+Used for medical diagnostics, security, factory inspection.
+
+#### UV Imaging 
+A UV imaging system uses ultraviolet (UV) light to capture images of objects. UV imaging can be used in a variety of scientific, medical, and artistic applications. <br>
+Uv Imagging is used in Fluorescence Microscopy. <br>
+Fluorescence microscopy is a type of light microscopy that uses fluorescence to study the properties of substances. It's a powerful tool for cell and molecular biologists, particularly neurobiologists. 
