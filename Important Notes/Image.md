@@ -45,3 +45,8 @@ A digital image is represented as a grid of pixels, where each pixel is made up 
 - Color  
 - Multispectral
 
+# Gray Level Resolution and False Contouring  
+
+A lower gray level resolution in an image results in a visible **false contouring** effect, where smooth areas of an image appear with artificial, step-like boundaries. This occurs due to the limited number of gray levels available to represent subtle intensity changes, making the image appear less detailed and potentially inaccurate for analysis, especially in areas with gradual intensity gradients.  
+
+Conversely, **higher gray level resolution** allows for a more precise representation of fine details in an image, with smoother transitions between different intensity levels.  
