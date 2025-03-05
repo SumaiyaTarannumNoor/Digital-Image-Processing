@@ -137,3 +137,42 @@ These three methods are commonly used in image processing for zooming.
 **Cons:**  
 - Can introduce some blurring, especially on sharp edges.
   
+# Get the adjacency path x when to go from x to y theory
+
+# Adjacency Path from X to Y in Graph Theory  
+
+In graph theory, an **adjacency path** from node **X** to node **Y** refers to a sequence of edges that connects **X** to **Y** through directly connected nodes. The path consists of vertices where each consecutive pair is adjacent in the graph.  
+
+## Key Concepts  
+
+### 1. Adjacency Matrix Representation  
+- A graph can be represented using an **adjacency matrix** \( A \), where:  
+  \[
+  A[i][j] = 1 \quad \text{if there is an edge between node } i \text{ and } j, \text{ otherwise } 0.
+  \]
+- The **existence of a path** between **X** and **Y** can be determined using the powers of \( A \). If \( A^k[X][Y] > 0 \), then a path of length **k** exists between **X** and **Y**.  
+
+### 2. Adjacency List Representation  
+- A graph can also be stored using an **adjacency list**, where each node keeps a list of its directly connected neighbors.  
+- **Breadth-First Search (BFS)** finds the shortest path from **X** to **Y** in an **unweighted graph**.  
+- **Depth-First Search (DFS)** explores all possible paths from **X** to **Y**.  
+
+## Pathfinding Algorithms  
+
+### 1. Dijkstra's Algorithm  
+- Finds the shortest path from **X** to **Y** in a **weighted graph**.  
+
+### 2. Floyd-Warshall Algorithm  
+- Finds the shortest paths between **all pairs of nodes**.  
+
+### 3. Bellman-Ford Algorithm  
+- Used for graphs with **negative weights**.  
+
+### 4. A* Algorithm  
+- **Heuristic-based** pathfinding for efficient traversal.  
+
+## When a Path Exists from X to Y  
+
+- If the graph is **connected**, there is always a path between any two nodes.  
+- In a **directed graph**, a path exists if there is a sequence of edges from **X** to **Y**.  
+- In an **undirected graph**, a path exists if **X** and **Y** belong to the same **connected component**.  
