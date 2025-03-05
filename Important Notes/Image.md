@@ -175,4 +175,51 @@ In graph theory, an **adjacency path** from node **X** to node **Y** refers to a
 
 - If the graph is **connected**, there is always a path between any two nodes.  
 - In a **directed graph**, a path exists if there is a sequence of edges from **X** to **Y**.  
-- In an **undirected graph**, a path exists if **X** and **Y** belong to the same **connected component**.  
+- In an **undirected graph**, a path exists if **X** and **Y** belong to the same **connected component**.
+
+  # Distance Metrics in a Grid  
+
+In computational geometry and image processing, different distance metrics are used to measure the separation between two points in a grid. The most common metrics are **Euclidean distance**, **City Block distance**, and **Chessboard distance**.  
+
+## 1. Euclidean Distance  
+The **Euclidean distance** (also known as the straight-line or L2 distance) measures the shortest path between two points in a continuous space. It is calculated using the Pythagorean theorem:  
+
+\[
+d(X, Y) = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+\]
+
+### Characteristics:  
+- Represents the **straight-line** distance between two points.  
+- Used in **continuous** space and many real-world applications like GPS navigation and machine learning.  
+
+## 2. City Block Distance (Manhattan Distance)  
+The **City Block distance** (also known as Manhattan or L1 distance) measures the distance between two points when movement is restricted to horizontal and vertical steps, similar to a grid-like city layout. It is given by:  
+
+\[
+d(X, Y) = |x_2 - x_1| + |y_2 - y_1|
+\]
+
+### Characteristics:  
+- Movement is allowed **only in horizontal and vertical** directions.  
+- Used in **urban planning**, **pixel-based image analysis**, and **taxicab navigation**.  
+
+## 3. Chessboard Distance (Chebyshev Distance)  
+The **Chessboard distance** (also known as Chebyshev or L∞ distance) measures the distance between two points when movement is allowed in **any direction**, including diagonals. It is given by:  
+
+\[
+d(X, Y) = \max(|x_2 - x_1|, |y_2 - y_1|)
+\]
+
+### Characteristics:  
+- Represents movement in games like **chess**, where a king moves **one step in any direction**.  
+- Used in **pathfinding algorithms** where diagonal movement is possible.  
+
+## Comparison Table  
+
+| Distance Metric     | Formula                                      | Allowed Movement                 | Application Examples |
+|---------------------|----------------------------------------------|----------------------------------|----------------------|
+| **Euclidean**       | \( \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \)   | Any direction (diagonal, straight) | GPS, Machine Learning |
+| **City Block**      | \( |x_2 - x_1| + |y_2 - y_1| \)             | Horizontal & Vertical only       | Urban Navigation, Image Processing |
+| **Chessboard**      | \( \max(|x_2 - x_1|, |y_2 - y_1|) \)         | Any direction (like a king in chess) | Chess AI, Robotics |
+
+These distance metrics are essential in **computer vision, robotics, AI, and pathfinding** applications, each serving specific use cases depending on movement constraints.  
