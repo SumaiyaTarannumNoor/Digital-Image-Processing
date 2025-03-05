@@ -35,6 +35,7 @@ A digital image is represented as a grid of pixels, where each pixel is made up 
 - Higher color depths allow for more vibrant images but require more storage space.  
 
 ### Image Formats  
+- TIFF (Tagged Image File Format) is a file format for storing raster graphics images.
 - **TIFF** is the de facto standard format for archival digital image files.  
 - **PNG** and **JPEG 2000** are other formats that can preserve data integrity and provide efficient compression ratios.  
 
