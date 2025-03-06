@@ -3,3 +3,7 @@
 
 # How to Normalize a Histogram in MATLAB?
 - https://www.geeksforgeeks.org/how-to-normalize-a-histogram-in-matlab/
+
+
+# Histogram Equalisation and Histogram Normalisation are different 
+"histogram equalization" is a specific technique that aims to spread out the intensity values in an image to create a more uniform histogram, while "histogram normalization" simply means scaling the values in a histogram so that they sum up to 1 (or 100%), essentially converting the counts into probabilities; essentially, normalization is a step often used within the process of histogram equalization but not the entire operation itself. 
