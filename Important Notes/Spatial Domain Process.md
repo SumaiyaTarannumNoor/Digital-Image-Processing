@@ -58,3 +58,7 @@ Where:
 - Large kernel sizes can lead to high computational costs.  
 
 Spatial domain processing is fundamental in **computer vision, medical imaging, and digital photography**, providing essential tools for analyzing and improving image quality.  
+
+
+# How to Normalize a Histogram in MATLAB?
+- https://www.geeksforgeeks.org/how-to-normalize-a-histogram-in-matlab/
