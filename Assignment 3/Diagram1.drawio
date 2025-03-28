@@ -1,9 +1,27 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3">
   <diagram name="Page-1" id="4kRo0u5oXu7StQ-dR5t9">
-    <mxGraphModel>
+    <mxGraphModel dx="880" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="z3Hs4yELBLfUpNT4N0oq-1" value="Input Image" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="70" y="50" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Hs4yELBLfUpNT4N0oq-2" value="MobileNet V2&lt;div&gt;(MNet V2)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="50" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Hs4yELBLfUpNT4N0oq-3" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.flowchart.on-page_reference;" vertex="1" parent="1">
+          <mxGeometry x="350" y="60" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Hs4yELBLfUpNT4N0oq-4" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;" vertex="1" parent="1">
+          <mxGeometry x="360" y="75" width="10" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Hs4yELBLfUpNT4N0oq-6" value="" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.annotation_1;align=left;pointerEvents=1;rotation=-180;" vertex="1" parent="1">
+          <mxGeometry x="380" y="75" width="10" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="z3Hs4yELBLfUpNT4N0oq-8" value="Post CNN" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="50" width="105" height="50" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
