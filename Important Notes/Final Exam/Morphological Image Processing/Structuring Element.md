@@ -49,3 +49,6 @@ A structuring element is moved across the image, and if it is completely contain
 ## In Summary:
 
 Structuring elements are essential tools in image processing, enabling the manipulation of image shapes and features through morphological operations. The shape, size, and origin of the structuring element dictate how these operations interact with the image, allowing for various image processing tasks like edge detection, noise reduction, and object analysis.
+
+## Link -
+https://homepages.inf.ed.ac.uk/rbf/HIPR2/strctel.htm
