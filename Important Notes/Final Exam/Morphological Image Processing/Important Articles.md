@@ -7,3 +7,6 @@
 
 ## Grayscale Morphological Analysis 
 - http://www.cyto.purdue.edu/cdroms/micro2/content/education/wirth08.pdf
+
+## Dilation (Morphological Operation)— Image Processing
+- https://medium.com/@anshul16/dilation-morphological-operation-image-processing-82d16a619f59
