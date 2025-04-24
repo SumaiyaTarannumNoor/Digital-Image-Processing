@@ -106,25 +106,23 @@ The result of **A** eroded by **B** is denoted as:
 ### Mathematical Equation
 A ⊖ B = { a | (a + b) ∈ A, ∀ b ∈ B }
 
-
 ### Explanation:
-- `a` represents the coordinates of a pixel in the eroded image.
-- `b` represents the coordinates of a pixel within the structuring element **B**.
-- `a + b` represents the translation of **B** with its origin at pixel **a**.
-- `∀ b ∈ B` means "for all pixels **b** within the structuring element **B**".
+- `a` is the coordinates of a pixel in the **eroded** image.
+- `b` is the coordinates of a pixel within the structuring element **B**.
+- `a + b` translates **B** so its origin aligns with **a**.
+- "∀ b ∈ B" means the **entire structuring element** must be within the foreground of **A** for pixel **a** to be foreground.
 
-This equation implies that a pixel **a** in the eroded image **A ⊖ B** exists **only if** the **entire translated structuring element** (**a + b**) fits **within the original image A**.
+This means erosion removes pixels from the boundaries of objects in the image.
 
 ---
 
 ## In Simpler Terms
-Erosion **shrinks objects** in an image by **removing pixels from their boundaries**.
+Erosion **shrinks** objects in an image:
 
-- The **size and shape** of the structuring element determine **how much** and **in what direction** the object is eroded.
-- If **any part** of the structuring element **falls outside** the foreground region of the image, the pixel is **eroded (set to zero)**.
+- Only if the **entire structuring element B**, when centered at pixel **a**, fits inside the foreground of **A**, the output at **a** is kept.
+- Erosion is used for **removing small objects**, **separating objects**, or **shrinking regions**.
 
 ---
 
 ## Example
-Imagine a binary image with a small square. If you **erode** this image with a **3×3 square structuring element**, the result will be a **smaller square**, with the outermost layer of pixels removed — effectively **shrinking the object** by 1 pixel around its border.
-
+If you erode a binary image containing a square using a **3×3 square structuring element**, the square will shrink. One layer of pixels will be removed from its boundary, making it smaller.
