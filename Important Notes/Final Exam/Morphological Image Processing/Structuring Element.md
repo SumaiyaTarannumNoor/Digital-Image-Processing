@@ -52,3 +52,43 @@ Structuring elements are essential tools in image processing, enabling the manip
 
 ## Link -
 https://homepages.inf.ed.ac.uk/rbf/HIPR2/strctel.htm
+
+
+## Mathematical Definition
+# Mathematical Definition of Dilation
+
+## Input
+- **Binary or Grayscale Image**: Denoted as **A**.
+- **Structuring Element (SE)**: A smaller image or kernel, denoted as **B**.
+
+## Dilation
+The result of **A** dilated by **B** is denoted as:  
+**A ⊕ B**
+
+### Mathematical Equation
+A ⊕ B = { a | (a + b) ∈ A, ∀ b ∈ B }
+
+
+### Explanation:
+- `a` represents the coordinates of a pixel in the dilated image.
+- `b` represents the coordinates of a pixel within the structuring element **B**.
+- `a + b` represents the translation of **B** with its origin at the pixel **a**.
+- `∀ b ∈ B` means "for all pixels **b** within the structuring element **B**".
+
+This equation means that a pixel **a** in the dilated image **A ⊕ B** exists if the translated structuring element (**a + b**) (for all **b** in **B**) intersects with the original image **A**. 
+
+In other words, if the structuring element covers any part of the original image, then the corresponding point in the dilated image is set to 1 (or a higher value for grayscale images).
+
+---
+
+## In Simpler Terms
+Dilation **expands objects** in an image by **adding pixels to their boundaries**.
+
+- The **size and shape** of the structuring element determine **how much** and **in what direction** the object is expanded.
+- If the **center of the structuring element** overlaps a non-zero pixel in the original image, the corresponding pixel in the output becomes non-zero.
+
+---
+
+## Example
+Imagine a binary image with a small square. If you **dilate** this image with a **3×3 square structuring element**, the result will be a **larger square**, with a border of **1 pixel** added around the original shape.
+
