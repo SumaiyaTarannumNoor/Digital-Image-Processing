@@ -92,3 +92,39 @@ Dilation **expands objects** in an image by **adding pixels to their boundaries*
 ## Example
 Imagine a binary image with a small square. If you **dilate** this image with a **3×3 square structuring element**, the result will be a **larger square**, with a border of **1 pixel** added around the original shape.
 
+
+# Mathematical Definition of Erosion
+
+## Input
+- **Binary or Grayscale Image**: Denoted as **A**.
+- **Structuring Element (SE)**: A smaller image or kernel, denoted as **B**.
+
+## Erosion
+The result of **A** eroded by **B** is denoted as:  
+**A ⊖ B**
+
+### Mathematical Equation
+A ⊖ B = { a | (a + b) ∈ A, ∀ b ∈ B }
+
+
+### Explanation:
+- `a` represents the coordinates of a pixel in the eroded image.
+- `b` represents the coordinates of a pixel within the structuring element **B**.
+- `a + b` represents the translation of **B** with its origin at pixel **a**.
+- `∀ b ∈ B` means "for all pixels **b** within the structuring element **B**".
+
+This equation implies that a pixel **a** in the eroded image **A ⊖ B** exists **only if** the **entire translated structuring element** (**a + b**) fits **within the original image A**.
+
+---
+
+## In Simpler Terms
+Erosion **shrinks objects** in an image by **removing pixels from their boundaries**.
+
+- The **size and shape** of the structuring element determine **how much** and **in what direction** the object is eroded.
+- If **any part** of the structuring element **falls outside** the foreground region of the image, the pixel is **eroded (set to zero)**.
+
+---
+
+## Example
+Imagine a binary image with a small square. If you **erode** this image with a **3×3 square structuring element**, the result will be a **smaller square**, with the outermost layer of pixels removed — effectively **shrinking the object** by 1 pixel around its border.
+
