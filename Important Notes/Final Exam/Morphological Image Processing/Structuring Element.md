@@ -126,3 +126,53 @@ Erosion **shrinks** objects in an image:
 
 ## Example
 If you erode a binary image containing a square using a **3×3 square structuring element**, the square will shrink. One layer of pixels will be removed from its boundary, making it smaller.
+
+
+# Morphological Operations: Dilation and Erosion
+
+Morphological operations are fundamental image processing techniques used primarily in binary and grayscale image analysis. Two key operations are **dilation** and **erosion**.
+
+---
+
+## Dilation
+
+**Dilation of image A by structuring element B** is denoted as:
+
+A ⊕ B = { a | (a - b) ∈ A for some b ∈ B }
+
+yaml
+Copy
+Edit
+
+### Meaning:
+We slide the structuring element **B** over the image **A**, and if **any part** of **B** overlaps a foreground (non-zero) pixel in **A**, the corresponding output pixel becomes foreground.
+
+---
+
+## Erosion
+
+**Erosion of image A by structuring element B** is denoted as:
+
+A ⊖ B = { a | (a + b) ∈ A for all b ∈ B }
+
+yaml
+Copy
+Edit
+
+### Meaning:
+The entire structuring element **B** must **fit entirely within** the foreground region of **A** when centered at a pixel **a**, for that pixel to be retained as foreground in the output.
+
+---
+
+## Intuition
+
+| Operation | Logic                                                             | Result                |
+|-----------|-------------------------------------------------------------------|------------------------|
+| **Dilation** | Expands shapes: if **any** part of **B** touches **A**, it's a hit | Grows brighter regions |
+| **Erosion**  | Shrinks shapes: only if **all** of **B** fits inside **A**        | Shrinks brighter regions |
+
+---
+
+## Notes
+- The structuring element **B** can be any shape (e.g., square, circle, cross).
+- Dilation and erosion are often used together to perform **opening** and **closing**, which help with noise removal and shape smoothing.
