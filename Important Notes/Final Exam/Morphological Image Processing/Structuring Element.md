@@ -66,31 +66,31 @@ The result of **A** dilated by **B** is denoted as:
 **A ⊕ B**
 
 ### Mathematical Equation
-A ⊕ B = { a | (a + b) ∈ A, ∀ b ∈ B }
+A ⊕ B = { a | (a - b) ∈ A, for some b ∈ B }
+
 
 
 ### Explanation:
-- `a` represents the coordinates of a pixel in the dilated image.
-- `b` represents the coordinates of a pixel within the structuring element **B**.
-- `a + b` represents the translation of **B** with its origin at the pixel **a**.
-- `∀ b ∈ B` means "for all pixels **b** within the structuring element **B**".
+- `a` is the coordinates of a pixel in the **dilated** image.
+- `b` is the coordinates of a pixel within the structuring element **B**.
+- `a - b` represents the **translation of B flipped about its origin**, then moved to position **a**.
+- "for some **b ∈ B**" means **if any pixel** in the structuring element overlaps a foreground pixel in **A**, then **a** is included in the output.
 
-This equation means that a pixel **a** in the dilated image **A ⊕ B** exists if the translated structuring element (**a + b**) (for all **b** in **B**) intersects with the original image **A**. 
-
-In other words, if the structuring element covers any part of the original image, then the corresponding point in the dilated image is set to 1 (or a higher value for grayscale images).
+This means that the dilation adds pixels to the boundaries of objects in the image. The shape and size of **B** determine the effect.
 
 ---
 
 ## In Simpler Terms
-Dilation **expands objects** in an image by **adding pixels to their boundaries**.
+Dilation **expands** objects in an image:
 
-- The **size and shape** of the structuring element determine **how much** and **in what direction** the object is expanded.
-- If the **center of the structuring element** overlaps a non-zero pixel in the original image, the corresponding pixel in the output becomes non-zero.
+- If any part of **B**, when centered at pixel **a**, touches a foreground pixel in **A**, then pixel **a** becomes foreground in the output.
+- Dilation is useful for **joining broken parts** of an object or **filling small holes**.
 
 ---
 
 ## Example
-Imagine a binary image with a small square. If you **dilate** this image with a **3×3 square structuring element**, the result will be a **larger square**, with a border of **1 pixel** added around the original shape.
+Imagine a binary image with a small square. If you **dilate** this image with a **3×3 square structuring element**, the result will be a **larger square** — a 1-pixel border gets added around the original square.
+
 
 
 # Mathematical Definition of Erosion
