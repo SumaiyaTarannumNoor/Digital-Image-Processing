@@ -140,10 +140,6 @@ Morphological operations are fundamental image processing techniques used primar
 
 A ⊕ B = { a | (a - b) ∈ A for some b ∈ B }
 
-yaml
-Copy
-Edit
-
 ### Meaning:
 We slide the structuring element **B** over the image **A**, and if **any part** of **B** overlaps a foreground (non-zero) pixel in **A**, the corresponding output pixel becomes foreground.
 
@@ -154,10 +150,6 @@ We slide the structuring element **B** over the image **A**, and if **any part**
 **Erosion of image A by structuring element B** is denoted as:
 
 A ⊖ B = { a | (a + b) ∈ A for all b ∈ B }
-
-yaml
-Copy
-Edit
 
 ### Meaning:
 The entire structuring element **B** must **fit entirely within** the foreground region of **A** when centered at a pixel **a**, for that pixel to be retained as foreground in the output.
